@@ -12,3 +12,5 @@ Renata: SlideShow dos Grupos
 Cauã: Aba de Apoiadores
 </br>
 Alisson: Footer
+</br>
+**EVITEM UTILIZAR TAGS NO CSS**
