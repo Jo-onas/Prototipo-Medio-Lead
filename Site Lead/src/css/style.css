@@ -1,34 +1,23 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap');
+
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
-  
-}
+  box-sizing: border-box;}
 
-  body {
-	background-image: url(https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/46933.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
-}
+  nav {
+  	height: 80px;
+  	background-color: rgb(117, 152, 201);
+  	width: 100%;
+  	display: flex;
+  	justify-content: space-between;
+  }
 
-/*  Navbar   */
-
- nav {
-  height: 80px;
-  background-color: rgb(58, 114, 192);
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding-right: px;
-  z-index: 1000;
- }
 
 nav img {
 	margin-left: 10px;
 	height: 75px;
 	width: 75px;
-	border-radius: 50%;
 }
 
 nav .navigation {
@@ -37,61 +26,39 @@ nav .navigation {
 	align-items: center;
 }
 
-nav .navigation li a {
-	text-decoration: none;
-	margin-left: 30px;
-	font-size: 35px;
-	color: white;
-	
-}
-
 nav .navigation li {
-	list-style-type: none;
-	margin-right: 20px;
-	
+	text-decoration: none;
+	margin-left: 10px;
 }
 
-/*  SlideShow Apresentação */
 
-	.Banner {
-		min-height: 100vh;
-		overflow: hidden;
-		
-	}
+body {
+	font-family: 'Poppins', sans-serif;
+	background:  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOe-PVhnf6GTmtsYtX5AtHMNQyg_rychaTlA&usqp=CAU);
+}
 
+.logo {
+	border-radius: 50%;
+}
 
-
- .slider {
- 	width: 400vw;
- 	display: flex;
- 	transition: all 0.7s ease-in-out;
- 	overflow: hidden;
- }
-
-	.conteudoslider {
+.Paralax {
 	display: flex;
-	justify-content: center;
-	align-items: center;
-	width: 100vw;
- }
-
- .conteudoslider .Sbg{
- 	width: 100vw;
- 	height: 100vh;
- 	
- }
+	background: url(https://img.elo7.com.br/product/main/34AB5D7/papel-de-parede-adesivo-espaco-plantetas-desenhos-marinheiro.jpg);
+	height: 85vh;
+  align-items: center;
+  vertical-align: center;
+  width: 100%;
 
 
-.Slogo{
-	position: absolute;
-	width: 40%;
 }
 
- /*  Botão   */
-
+.Paralax h1 {
+	color:  white;
+	font-size: 100px;
+	padding-left: 35%;
+}
 
 .botao {
-	
 	display: flex;
 	height: 200px;
 	align-items: center;
@@ -104,28 +71,19 @@ nav .navigation li {
 	display: flex;
 	height: 80px;
 	width: 300px;
-	background-color: #0000008c;
+	background-color: white;
 	margin: 0 30px;
 	align-items: center;
-	font-size: 32px;
-	user-select: none;
-    cursor: pointer;
-	color:#d0d672d9;
-	padding: 37px;
-	filter: blur(0.7px);
+	font-size: 35px;
+	color: blue;
+	padding: 10px;
 }
 
 .botao div:hover {
-	background-color: #0b0b23;
-	filter: blur(0px);
+	background-color: rgb(83, 134, 168);
 }
 
-
-/* Slideshow Grupos  */
-
-
 .imge img {
-	margin-top: 20px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -137,10 +95,8 @@ nav .navigation li {
  	width: 900px;
  }
 
-/*  Texto   */
  .texto {
  	color: white;
- 	margin-bottom: 30px;
  
  }
 
@@ -150,8 +106,7 @@ nav .navigation li {
 	display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 5em;
-  margin-bottom: 20px;
+  width: 6em;
  }
 
  .texto p {
@@ -161,58 +116,27 @@ nav .navigation li {
   width: 50em;
  }
 
-
- /*  Apoiadores   */
-
- .patro {
- 	display: flex;
- 	height: 300px;
- 	justify-content: space-between;
- }
-
- .patro div {
- 	height: 100px;
- 	background-color:rgba(44, 42, 58, 0.521) ;
- 	width: 300px;
- }
-
- .patro div:hover{
- background-color:rgba(44, 42, 58, 0.726) ;
- 	height: 200px;
- }
-
-
-
- /* Footer */
+      /* RODAPE */
 
  footer {
  	background-color: black;
- 	height: 120px;
+ 	height: 230px;
 	display: flex;
 	align-items: center;
  }
 
  .rodape {
-	 margin-left: 30px;
+	 margin-left: 120px;
 	 display: flex;
 	 flex-direction: column;
+	 /*animation: animation 2s;*/
  }
 
- .container {
- 	display: flex;
- 	justify-content: center;
- 	align-items: center;
- }
-
- 
-
- h3 {
-	 margin-top: 10px;
-	 color: aliceblue;
- }
 
  p {
 	color: aliceblue;
+	margin-top: 10px;
+	margin-bottom: 5px;
 }
 
  li {
@@ -226,27 +150,41 @@ nav .navigation li {
 	  margin-bottom: 2px;
   }
 
+  @keyframes animation {
+
+	from {
+		transform: translateY(20vw);
+	}
+
+	to {
+		transform: translateY();
+	}
+  }
+
 
  .aluradiv {
 	 display: flex;
 	 align-items: center;
-	 margin-left: 350px;
+	 margin-left: 55vw;
+	 /*animation: animation 2s;*/
  }
 
  .leadlogo {
-	width: 110px;
+	width: 150px;
 	margin-right: 20px;
-	margin-top: 12px;
+	margin-top: 0;
+	margin-bottom: 20px;
 }
 
  .alura {
 	 width: 80px;
-	 
+	 /*animation: animation 2s;*/
  }
 
  .luiza {
 	 width: 130px;
 	 margin-left: 10px;
+	 /*animation: animation 2.5s;*/
  }
 
  /*FIM DO RODAPE*/
