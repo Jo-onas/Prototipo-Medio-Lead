@@ -3,21 +3,37 @@
 *{
   margin: 0;
   padding: 0;
-  box-sizing: border-box;}
+  box-sizing: border-box;
+  
+}
 
-  nav {
-  	height: 80px;
-  	background-color: rgb(117, 152, 201);
-  	width: 100%;
-  	display: flex;
-  	justify-content: space-between;
-  }
+  body {
+	background-image: url(https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/46933.png);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-attachment: fixed;
+}
 
+
+
+
+/*  Navbar   */
+
+ nav {
+  height: 80px;
+  background-color: rgb(58, 114, 192);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding-right: px;
+  z-index: 1000;
+ }
 
 nav img {
 	margin-left: 10px;
 	height: 75px;
 	width: 75px;
+	border-radius: 50%;
 }
 
 nav .navigation {
@@ -26,39 +42,67 @@ nav .navigation {
 	align-items: center;
 }
 
-nav .navigation li {
+nav .navigation li a {
 	text-decoration: none;
-	margin-left: 10px;
+	margin-left: 30px;
+	font-size: 35px;
+	color: white;
+	
+}
+
+nav .navigation li {
+	list-style-type: none;
+	margin-right: 20px;
+	
 }
 
 
-body {
-	font-family: 'Poppins', sans-serif;
-	background:  url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQOe-PVhnf6GTmtsYtX5AtHMNQyg_rychaTlA&usqp=CAU);
-}
 
-.logo {
-	border-radius: 50%;
-}
 
-.Paralax {
+/*  SlideShow Apresentação */
+
+	.Banner {
+		min-height: 100vh;
+		overflow: hidden;
+	}
+
+
+
+ .slider {
+ 	width: 400vw;
+ 	display: flex;
+ 	transition: all 0.7s ease-in-out;
+
+ }
+
+	.conteudoslider {
 	display: flex;
-	background: url(https://img.elo7.com.br/product/main/34AB5D7/papel-de-parede-adesivo-espaco-plantetas-desenhos-marinheiro.jpg);
-	height: 85vh;
-  align-items: center;
-  vertical-align: center;
-  width: 100%;
+	justify-content: center;
+	align-items: center;
+	width: 100vw;
+ }
 
 
+ .conteudoslider .Sbg{
+ 	width: 100vw;
+ 	height: 100vh;
+ 	
+ }
+
+
+.Slogo{
+	position: absolute;
+	width: 40%;
 }
 
-.Paralax h1 {
-	color:  white;
-	font-size: 100px;
-	padding-left: 35%;
-}
+
+
+
+
+ /*  Botão   */
 
 .botao {
+	
 	display: flex;
 	height: 200px;
 	align-items: center;
@@ -71,19 +115,29 @@ body {
 	display: flex;
 	height: 80px;
 	width: 300px;
-	background-color: white;
+	background-color: #0000008c;
 	margin: 0 30px;
 	align-items: center;
-	font-size: 35px;
-	color: blue;
-	padding: 10px;
+	font-size: 32px;
+	user-select: none;
+    cursor: pointer;
+	color:#d0d672d9;
+	padding: 37px;
+	filter: blur(0.7px);
 }
 
 .botao div:hover {
-	background-color: rgb(83, 134, 168);
+	background-color: #0b0b23;
+	filter: blur(0px);
 }
 
+
+
+
+/* Slideshow Grupos  */
+
 .imge img {
+	margin-top: 20px;
 	display: block;
     margin-left: auto;
     margin-right: auto;
@@ -95,8 +149,15 @@ body {
  	width: 900px;
  }
 
+
+
+
+
+/*  Texto   */
+
  .texto {
  	color: white;
+ 	margin-bottom: 30px;
  
  }
 
@@ -106,7 +167,8 @@ body {
 	display: block;
   margin-left: auto;
   margin-right: auto;
-  width: 6em;
+  width: 5em;
+  margin-bottom: 20px;
  }
 
  .texto p {
@@ -116,9 +178,57 @@ body {
   width: 50em;
  }
 
-      /* RODAPE */
+
+
+
+
+ /*  Apoiadores   */
+
+ .patro {
+ 	display: flex;
+ 	height: 300px;
+ 	justify-content: space-between;
+ }
+
+ .patro div {
+ 	height: 100px;
+ 	background-color:rgba(44, 42, 58, 0.521) ;
+ 	width: 300px;
+ }
+
+ .patro div:hover{
+ background-color:rgba(44, 42, 58, 0.726) ;
+ 	height: 200px;]
+ }
+
+.patro .container {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+ .leadlogo2 {
+	width: 150px;
+
+}
+
+ .alura2 {
+	 width: 80px;
+
+ }
+
+ .luiza2 {
+	 width: 130px;
+
+}
+
+
+
+
+  /* RODAPE */
 
  footer {
+ 	font-family: 'Poppins', sans-serif;
  	background-color: black;
  	height: 230px;
 	display: flex;
@@ -133,19 +243,19 @@ body {
  }
 
 
- p {
+ footer p {
 	color: aliceblue;
 	margin-top: 10px;
 	margin-bottom: 5px;
 }
 
- li {
+ footer li {
 	 margin-top: 10px;
 	 display: flex;
 	 flex-direction: column;
  }
 
-  a {
+ footer a {
 	  color: aliceblue;
 	  margin-bottom: 2px;
   }
