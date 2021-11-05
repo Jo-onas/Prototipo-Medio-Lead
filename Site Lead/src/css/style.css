@@ -9,9 +9,7 @@
 
   body {
 	background-image: url(https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/46933.png);
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-attachment: fixed;
+
 }
 
 
@@ -197,8 +195,8 @@ nav .navigation li {
  }
 
  .patro div:hover{
- background-color:rgba(44, 42, 58, 0.726) ;
- 	height: 200px;]
+ 	background-color:rgba(44, 42, 58, 0.726) ;
+ 	height: 200px;
  }
 
 .patro .container {
@@ -233,6 +231,7 @@ nav .navigation li {
  	height: 230px;
 	display: flex;
 	align-items: center;
+	justify-content: space-between;
  }
 
  .rodape {
@@ -275,8 +274,7 @@ nav .navigation li {
  .aluradiv {
 	 display: flex;
 	 align-items: center;
-	 margin-left: 55vw;
-	 /*animation: animation 2s;*/
+	 justify-content: space-between;
  }
 
  .leadlogo {
@@ -286,15 +284,22 @@ nav .navigation li {
 	margin-bottom: 20px;
 }
 
+.atheneulogo {
+	background-color: rgba(255, 255, 255, 0.13);
+	padding: 10px;
+	width: 200px;
+	margin-right: 20px;
+	border-radius: 3px;
+}
+
  .alura {
 	 width: 80px;
-	 /*animation: animation 2s;*/
+	 animation: animation 2s;
+	 margin-right: 20px;
  }
 
  .luiza {
 	 width: 130px;
-	 margin-left: 10px;
-	 /*animation: animation 2.5s;*/
  }
 
  /*FIM DO RODAPE*/
