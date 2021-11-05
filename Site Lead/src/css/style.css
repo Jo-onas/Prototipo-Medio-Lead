@@ -182,46 +182,71 @@ nav .navigation li {
 
  /*  Apoiadores   */
 
- .patro {
- 	display: flex;
- 	height: 300px;
- 	justify-content: space-between;
- }
-
- .patro div {
- 	height: 100px;
- 	background-color:rgba(44, 42, 58, 0.521) ;
- 	width: 300px;
- }
-
- .patro div:hover{
- 	background-color:rgba(44, 42, 58, 0.726) ;
- 	height: 200px;
- }
-
-.patro .container {
-	display: flex;
-	align-items: center;
-	justify-content: center;
-}
-
  .leadlogo2 {
-	width: 150px;
-
+	width: 120px;
 }
 
  .alura2 {
 	 width: 80px;
-
  }
 
  .luiza2 {
 	 width: 130px;
+}
+
+.instagram2 {
+	width: 200px;
+}
+
+.conatainer {
+	position: relative;
+	width: 1350px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	flex-wrap: wrap;
 
 }
 
+.conatainer .servicebox {
+	position: relative;
+	width: 350px;
+	height: 280px;
+	background: #ffffff;
+	border-radius: 20px;
+	overflow: hidden;
+}
 
+.conatainer .servicebox .icon {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #0b0b23;
+	transition: 0.5s;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	z-index: 2;
+}
 
+.conatainer .servicebox:hover .icon {
+	top: 30px;
+	left: calc(50% - 70px);
+	width: 150px;
+	height: 150px;
+	border-radius: 50%;
+}
+
+.conatainer .servicebox .content {
+	position: relative;
+	padding: 45px;
+	text-align: center;
+	margin-top: 150px;
+	z-index: 1;
+}
 
   /* RODAPE */
 
@@ -285,23 +310,21 @@ nav .navigation li {
 }
 
 .atheneulogo {
-	padding: 5px;
-	width: 210px;
+	background-color: rgba(255, 255, 255, 0.13);
+	padding: 10px;
+	width: 200px;
 	margin-right: 20px;
+	border-radius: 3px;
 }
 
  .alura {
-	 width: 100px;
-	 padding: 15px;
-
+	 width: 80px;
+	 animation: animation 2s;
+	 margin-right: 20px;
  }
 
  .luiza {
 	 width: 130px;
  }
 
- .aluradiv img:hover{
-	background-color: rgba(168, 168, 168, 0.329);
-	border-radius: 5px;
- }
  /*FIM DO RODAPE*/
