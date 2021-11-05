@@ -179,19 +179,18 @@ nav .navigation li {
 
 
 
-
- /*  Apoiadores   */
+/*  Apoiadores   */
 
  .leadlogo2 {
-	width: 120px;
+	width: 140px;
 }
 
  .alura2 {
-	 width: 80px;
+	 width: 100px;
  }
 
  .luiza2 {
-	 width: 130px;
+	 width: 170px;
 }
 
 .instagram2 {
@@ -213,7 +212,7 @@ nav .navigation li {
 	position: relative;
 	width: 350px;
 	height: 280px;
-	background: #ffffff;
+	background: #4e5063e1;
 	border-radius: 20px;
 	overflow: hidden;
 }
@@ -247,6 +246,9 @@ nav .navigation li {
 	margin-top: 150px;
 	z-index: 1;
 }
+
+
+
 
   /* RODAPE */
 
@@ -310,21 +312,23 @@ nav .navigation li {
 }
 
 .atheneulogo {
-	background-color: rgba(255, 255, 255, 0.13);
-	padding: 10px;
-	width: 200px;
+	padding: 5px;
+	width: 210px;
 	margin-right: 20px;
-	border-radius: 3px;
 }
 
  .alura {
-	 width: 80px;
-	 animation: animation 2s;
-	 margin-right: 20px;
+	 width: 100px;
+	 padding: 15px;
+
  }
 
  .luiza {
 	 width: 130px;
  }
 
+ .aluradiv img:hover{
+	background-color: rgba(168, 168, 168, 0.329);
+	border-radius: 5px;
+ }
  /*FIM DO RODAPE*/
