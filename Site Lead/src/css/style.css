@@ -9,8 +9,9 @@
 
   body {
 	background-image: url(https://dbdzm869oupei.cloudfront.net/img/vinylrugs/preview/46933.png);
-
+	
 }
+
 
 
 
@@ -43,8 +44,9 @@ nav .navigation {
 nav .navigation li a {
 	text-decoration: none;
 	margin-left: 30px;
-	font-size: 35px;
+	font-size: 25px;
 	color: white;
+	font-family: Arial, Helvetica, sans-serif;
 	
 }
 
@@ -114,7 +116,7 @@ nav .navigation li {
 	display: flex;
 	height: 80px;
 	width: 300px;
-	background-color: #0000008c;
+	background-color: rgb(11, 11, 35);
 	margin: 0 30px;
 	align-items: center;
 	justify-content: center;
@@ -122,7 +124,7 @@ nav .navigation li {
 	font-size: 32px;
 	user-select: none;
     cursor: pointer;
-	color:#d0d672d9;
+	color:#ffffff;
 	padding: 37px;
 	font-family: Arial, Helvetica, sans-serif;
 	border: 3px solid rgb(11, 11, 35);
@@ -132,7 +134,8 @@ nav .navigation li {
 
 .botao div:hover {
 	background-color: #0b0b23;
-	transform: scale(1.1);
+	transform: scale(1.05);
+	box-shadow: 5px 5px 1px rgb(43, 43, 90);
 }
 
 
