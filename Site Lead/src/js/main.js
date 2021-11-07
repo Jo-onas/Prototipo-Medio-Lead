@@ -1,19 +1,18 @@
 
-        const sliders = document.querySelector(".slider")
+        const slider = document.querySelector(".slider")
 
-        let mySlidersValue = 0
-        let idSlide = 0
+        let widthSlide = 0
 
-        function handleSlide() {
-            if(mySlidersValue == -300) {
-            mySlidersValue = 0
+        function passarSlide() {
+            if(widthSlide == -300) {
+            widthSlide = 0
             }
-            sliders.style.marginLeft = `${mySlidersValue}vw`
+            slider.style.marginLeft = `${widthSlide}vw`
         }
 
         setInterval(() => {
-            mySlidersValue += -100
-            handleSlide()
+            widthSlide += -100
+            passarSlide()
         }, 3000);
 
         
