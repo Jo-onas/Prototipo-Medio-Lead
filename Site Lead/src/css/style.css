@@ -62,8 +62,8 @@ nav .navigation li {
 /*  SlideShow Apresentação */
 
 	.Banner {
-		min-height: 100vh;
 		overflow: hidden;
+		max-height: 800px;
 	}
 
 
@@ -86,6 +86,7 @@ nav .navigation li {
  .conteudoslider .Sbg{
  	width: 100vw;
  	height: 100vh;
+	 max-height: 800px;
  	
  }
 
