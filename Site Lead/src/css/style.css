@@ -111,7 +111,7 @@ nav .navigation li {
 	
 }
 
-.botao div {
+.botao a {
 	border-radius: 40px;
 	display: flex;
 	height: 80px;
@@ -132,7 +132,7 @@ nav .navigation li {
 	/* filter: blur(0.7px); */
 }
 
-.botao div:hover {
+.botao a:hover {
 	background-color: #0b0b23;
 	transform: scale(1.05);
 	box-shadow: 5px 5px 1px rgb(43, 43, 90);
